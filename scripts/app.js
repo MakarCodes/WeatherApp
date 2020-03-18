@@ -17,11 +17,6 @@ form.addEventListener('submit', e=> {
 
 });
 
-if(localStorage.getItem('city')){
-    updateCity(localStorage.getItem('city'))
-    .then(data => updateUI(data))
-    .catch(err => console.log(err));
-}
 
 const updateCity = async (city) => {
     const cityDetails = await getCity(city);
@@ -33,7 +28,6 @@ const updateCity = async (city) => {
     // }
     return { cityDetails, weather };
 }
-
 
 
 const updateUI = (data) => {
@@ -65,4 +59,10 @@ const updateUI = (data) => {
         card.classList.remove('d-none');
     }
     
+}
+
+if(localStorage.getItem('city')){
+    updateCity(localStorage.getItem('city'))
+    .then(data => updateUI(data))
+    .catch(err => console.log(err));
 }
