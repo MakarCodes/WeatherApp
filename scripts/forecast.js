@@ -6,6 +6,7 @@ const getCity = async function (city){
     const query = `?apikey=${key}&q=${city}`;
 
     const response = await fetch(base + query);
+    console.log(response)
     const data = await response.json();
     console.log('data1', data);
     return data[0];
