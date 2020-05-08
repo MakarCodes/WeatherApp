@@ -12,7 +12,7 @@ Project is created with:
 * JavaScript
 
 ## Screenshoots
-![Code-fetch](./gif/code-fetch.PNG)
+![Code-fetch](./gif/code-fetch_corrected.PNG)
 	
 ## Setup
 To run this project, clone it and open with live server:
